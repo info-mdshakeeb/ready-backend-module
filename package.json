@@ -10,7 +10,7 @@
     "mongoose": "^8.0.1"
   },
   "scripts": {
-    "dev": "nodemon src/app.js",
+    "dev": "nodemon src/server.js",
     "start": "node app.js",
     "lint": "eslint . --ext .js,.ts",
     "pre:format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",

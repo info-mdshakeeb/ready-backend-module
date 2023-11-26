@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const globalErrorHandler = require('./middlewares/globalErrorHandler');
-// const routes = require('./routers');
+const routes = require('./routers');
 
 const app = express();
 
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
   res.send("this is test server -> welcome shakeeb's server");
 });
 // app routers
-// app.use('/api/v1/', routes)
+app.use('/api/v1/', routes);
 
 // error handler :
 app.use(globalErrorHandler);
